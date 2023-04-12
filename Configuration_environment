@@ -1,0 +1,109 @@
+# PHP8.0 + PHPStorm + Xdebug
+
+
+
+## 1. Installation
+
+### （1）Install PHPStorm
+
+DownLoad Llink : https://www.jetbrains.com/phpstorm/promo/?source=google&medium=cpc&campaign=14335686138&term=phpstorm&content=604147130387&gclid=CjwKCAjw586hBhBrEiwAQYEnHQ3ZosUYj98exUlpTtlGizssVKikg-j9wLOMLCrrbG0P4362c1fAfhoC6coQAvD_BwE
+
+==Note== : if you are University Student, you can apply student account, 1 year for free
+
+link :  https://www.jetbrains.com/community/education/#students/
+
+
+
+### (2) Install Php 
+
+Since I am using **MacOS** : 
+
+The quickest way to install php on macOS is with homebrew:
+
+1. install homebrew 
+
+   link : https://brew.sh/
+
+2. open Terminal , run : 
+
+   ```
+   brew install php
+   ```
+
+   ==Note== : if you want to install specific verison of php, run : 
+
+   brew install php@with the version you are going to install , for example : brew install php@8.0
+
+   ```
+   brew install php@8.0   //it will install a specific php verison
+   ```
+
+3. check install succcessufully ?
+
+   ```
+   php -v
+   ```
+
+4. 刷新php连接, 如果你有多个版本的Php， 可以使用这个语句， 加上你的version
+
+   ```
+   brew link php@8.0
+   ```
+
+   ==Note :==  https://blog.csdn.net/qq_37200336/article/details/125584670?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-125584670-blog-115815259.235%5Ev28%5Epc_relevant_default_base1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-5-125584670-blog-115815259.235%5Ev28%5Epc_relevant_default_base1&utm_relevant_index=6
+
+5. 一些有用的文章链接：
+
+   （1）安装
+
+   https://blog.csdn.net/samhuaixiaozi/article/details/49205207?ops_request_misc=&request_id=&biz_id=&utm_medium=distribute.pc_search_result.none-task-blog-2~all~koosearch~default-1-49205207-null-null.142
+
+   
+
+   （2）这篇文章中有说到怎么用brew卸载老版本的php:
+
+   https://blog.csdn.net/Primary_wind/article/details/49369379?ops_request_misc=&request_id=&biz_id=&utm_medium=distribute.pc_search_result.none-task-blog-2~all~koosearch~default-3-49369379-null-null.142
+
+   
+
+   （3）在安装时， 将php加入Path
+
+   https://blog.csdn.net/weixin_34397291/article/details/94102968?ops_request_misc=&request_id=&biz_id=&utm_medium=distribute.pc_search_result.none-task-blog-2~all~koosearch~default-13-94102968-null-null.142
+
+   
+
+   ### (3) Install Xdebug
+
+   ==参考文章：==
+   
+   https://blog.csdn.net/william_n/article/details/124968041
+   
+   
+   
+   官网：TMD尽是些没用的
+   
+   https://xdebug.org/docs/install
+   
+   
+   
+   1. 先检查是否有安装xdebug
+   
+      ```
+      //检查xdebug扩展: 
+      
+      php  -m | grep xdebug 
+      
+      //如果没有安装就不会跳出来东西
+      //如果有安装就会出现： 	
+      xdebug
+      
+      php -v
+      //	也可以检查是否安装了xdebug
+      
+      ```
+   
+      
+   
+   1. 进入链接查看目前版本php, 所适配的xdebug的版本
+   
+      
